@@ -1,0 +1,73 @@
+
+.hr-small {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+/* ---------------NAVIGATION---------------------*/
+
+.navigation {
+  padding-left: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.navigation li a {
+  color: #EEE;
+  letter-spacing: 0.2em;
+  transition: 0.5s ease;
+}
+
+.navigation li a:hover {
+  color: rgb(99, 208, 102);
+  text-decoration: none;
+}
+
+.navigation li a:focus {
+  color: rgb(99, 208, 102);
+  text-decoration: none;
+}
+
+
+
+/*----------------LOADING---------------------*/
+
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(79, 188, 82, 0.5);
+}
+
+.loading p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.loading img {
+  width: 40px;
+  margin: 10px auto;
+  -webkit-animation: LOADING 1s linear infinite; /* Safari 4+ */
+  -moz-animation:    LOADING 1s linear infinite; /* Fx 5+ */
+  -o-animation:      LOADING 1s linear infinite; /* Opera 12+ */
+  animation:         LOADING 1s linear infinite; /* IE 10+, Fx 29+ */
+
+}
+
+
+/*----------------ANIMATION---------------------*/
+
+
+@-webkit-keyframes LOADING {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

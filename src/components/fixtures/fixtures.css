@@ -1,0 +1,109 @@
+/* ---------------FIXTURES---------------------*/
+.fixtures:hover {
+  cursor: default;
+}
+
+.fixtures .container {
+  background-image: url(../../assets/field-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: scroll;
+}
+
+.fixtures .navigation {
+  margin-top: 50px;
+}
+.fixture-title {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+a.fixture {
+  margin: 2px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFF;
+  transition: 0.5s ease;
+  width: 60%;
+}
+a.fixture:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  color: rgba(79, 188, 82, 0.7);
+}
+
+a.in-play {
+  background-color: rgba(0,45,30,0.4);
+}
+
+.winner {
+  font-weight: bolder;
+  color: rgb(150, 200, 150);
+}
+.draw {
+  font-style: italic;
+}
+
+a.timed {
+  background-color: rgba(0,20,0,0.4);
+}
+
+.footnote {
+  font-size: 1.2em;
+}
+
+.filter li {
+  border-bottom: 1px solid #FFF;
+  background-color: rgba(0,0,0,0);
+  margin: 10px 15px;
+  padding: 5px;
+  width: 90px;
+  transition: 0.5s ease;
+}
+
+.filter li:hover {
+  border-bottom-color: rgb(99, 208, 102);
+  color: rgb(99, 208, 102);
+  background-color: rgba(0,0,0,0);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+  a.fixture {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  a.fixture {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  a.fixture {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a.fixture div {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  a.fixture {
+    font-size: 0.9em; 
+  }
+}

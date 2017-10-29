@@ -1,0 +1,165 @@
+
+/* ---------------COMPETITION---------------------*/
+
+.competitions-background .navigation {
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+h1.title {
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.competition-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+a.competition {
+  width: 250px;
+}
+
+a.competition  {
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  background-color: rgba(43,49,42,0.0);
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  height: 50px;
+  transition: 0.5s ease;
+}
+
+a.competition:hover, a.fixture:hover {
+  background-color: rgba(0, 0, 0, 0.0);
+  cursor: pointer;
+  color: rgba(79, 188, 82, 0.7);
+}
+
+.competitions-background {
+  background-image: url(../../assets/competition-background.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.competitions-background:hover {
+  cursor: default;
+}
+
+
+/* ------------------TABLE----------------------*/
+
+hr.line {
+  border: 2px solid rgba(79, 188, 82, 0.4);
+  margin-top: 10px;
+}
+
+.table .team, .losses, .goalsDiff {
+  text-align: left;
+}
+
+.table .wins, .goals {
+  text-align: right;
+}
+
+.table thead tr {
+  background-color: #2B312A;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  background-color: rgba(24,26,24,0.5); 
+  color: #EEE;
+  transition: 0.5s ease;
+}
+
+.table tbody tr, .table tbody td {
+  border-bottom: 1px solid #171717;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: rgba(43,49,42,0.5);
+}
+
+.table tbody tr:hover {
+  background-color: #181A18;
+  cursor: pointer;
+  color: rgba(79, 188, 82, 0.7);
+}
+
+.table tbody tr:nth-child(odd):hover {
+  background-color: #2B312A;
+}
+
+
+/*----------------TEAM-INFO--------------------*/
+
+.team-emblem {
+  height: 200px;
+  margin: 10px;
+  z-index: -1;
+  -webkit-filter: drop-shadow(5px 5px 5px #000);
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+.team-table {
+  margin: 20px;
+}
+
+.team-name {
+  font-family: 'Roboto Slab', serif;
+  text-shadow: .20em .20em .45em #000;
+}
+
+.statistic-header {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: .20em .20em .45em #000;
+}
+
+.team-statistic {
+  text-align: center;
+  text-shadow: .20em .20em .45em #000;
+}
+
+.player-name {
+  text-align: left;
+}
+
+.position {
+  text-align: left;
+}
+
+/*-------------------SCROLL-UP------------------*/
+
+.scroll-up {
+  background-color: rgba(43,49,42,0.8);
+  border-radius: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+} 
+
+.scroll-up:hover {
+  background-color: #2B312A;
+  cursor: pointer;
+}
+
+.scroll-up img {
+  padding: 0;
+  width: 50%;
+}

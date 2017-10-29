@@ -1,0 +1,64 @@
+/* ---------------JUMBOTRONE---------------------*/
+
+.jumbotron {
+  background-image: url("http://www.powerpointhintergrund.com/uploads/2017/05/green-grass-texture-background-photo-green-grass-texture-29.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; 
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.jumbotron:hover {
+  cursor: default;
+}
+
+.jumbotron .shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 50px;
+  padding-bottom: 50px; 
+}
+
+p.lead {
+  font-size: 1.6em;
+  margin: 10px;
+}
+
+h1.display-3 {
+  margin-bottom: 30px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.jumbotron .btn-success {
+  border-color: #FFF;
+  margin: 20px;
+  transition: 0.5s ease;
+  background-color: rgba(0,0,0,0);
+  width: 200px;
+}
+
+.jumbotron .btn-success:hover {
+  border-color: rgb(99, 208, 102);
+  color: rgb(99, 208, 102);
+}
+
+/* -----------------APP-INFO----------------------*/
+
+.app-info {
+  text-align: center;
+}
+
+.app-info:hover {
+  cursor: default;
+}
+
+.app-info h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-info img{
+  margin: 20px;
+  width: 60px;
+}
