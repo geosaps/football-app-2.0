@@ -94,11 +94,18 @@ a.timed {
   a.fixture {
     width: 100%;
   }
+  a.fixture div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  a.fixture div {
-    padding: 2px;
+  .fixture-time {
+    padding-right: 2px;
   }
 }
 

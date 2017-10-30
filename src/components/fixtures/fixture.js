@@ -9,7 +9,12 @@ export default class Feaxture extends Component {
           (status === 'FINISHED' ? "finished" : 
           (status === "IN_PLAY" ? "in-play" : "timed"))}>
         <div className="row">
-          <div className="col-md-1 col-xs-1">
+          <div className="hidden-lg hidden-md hidden-sm col-xs-12">
+            {cestDate}
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-1 col-sm-1 hidden-xs fixture-time">
             {cestDate}
           </div>
           <div className={"col-md-4 col-xs-4 " + 

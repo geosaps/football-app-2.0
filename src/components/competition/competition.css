@@ -46,9 +46,10 @@ a.competition:hover, a.fixture:hover {
 
 .competitions-background {
   background-image: url(../../assets/competition-background.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .competitions-background:hover {
@@ -162,4 +163,10 @@ hr.line {
 .scroll-up img {
   padding: 0;
   width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .team-table {
+    margin: 20px 0;
+  }
 }
