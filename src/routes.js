@@ -6,7 +6,7 @@ import Competition from './components/competition/competition';
 import App from './components/App';
 
 export default (
-  <Route path="/" component={App}>
+  <Route path={process.env.PUBLIC_URL + '/'} component={App}>
     <IndexRoute component={Home}></IndexRoute>
     <Route path="/fixtures" component={Fixtires}></Route>
     <Route path="/competition" component={Competition}></Route>

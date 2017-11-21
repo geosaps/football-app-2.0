@@ -7,7 +7,7 @@ export default class Team extends Component {
       <tr onClick={e => {
                   e.preventDefault()
                   setTeamName(team)
-                  getTeamInfo(team._links.team.href + "/players")
+                  getTeamInfo("https" + team._links.team.href.slice(4) + "/players")
                 }}>
         <td>{team.position}</td>
         <td className="team">{team.teamName}</td>

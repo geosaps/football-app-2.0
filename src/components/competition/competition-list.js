@@ -4,6 +4,7 @@ export default class CompetitionList extends Component {
 
   render() {
     const { getLeagueTable, competitions } = this.props
+    console.log(competitions);
     let competitionFilter = ['League One 2017/18', 'League Two 2017/18', 'Ligue 2 2017/18', '2. Bundesliga 2017/18', 'DFB-Pokal 2017/18', 'Serie B 2017/18', 'Champions League 2017/18', 'Australian A-League']
     let competitionsList = competitions.filter( (competition) => competitionFilter.indexOf(competition.caption) === -1 )
     return (
@@ -15,7 +16,7 @@ export default class CompetitionList extends Component {
             <a key={i}
                 onClick={e => {
                   e.preventDefault()
-                  getLeagueTable(competition._links.leagueTable.href)
+                  getLeagueTable("https" + competition._links.leagueTable.href.slice(4) + "")
                 }}
                 className='list-group-item 
                     list-group-item-success
