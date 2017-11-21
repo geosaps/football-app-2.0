@@ -155,42 +155,42 @@ export default class Competition extends Component {
           (teamInfo) ?
           <div>
           <hr className='line' />
-            <div className="row">
-              <div className="col-md-4 col-sm-4">
-                <h1 className="text-center team-name">{teamDetailInfo.teamName}</h1>
-                {
-                  (teamDetailInfo.crestURI) ?
-                  <img className="team-emblem" src={teamDetailInfo.crestURI} alt="team-emblem"/> :
-                  <p>There is no emblem availible...</p>
-                }
-                
-                <hr className="hr-small"/>
-                <h3 className="statistic-header">Home statistic</h3>
-                <div className="team-statistic">
-                  <p>Goals scored: <strong>{teamDetailInfo.home.goals}</strong></p>
-                  <p>Goals against: <strong>{teamDetailInfo.home.goalsAgainst}</strong></p>
-                  <p>Wins: <strong>{teamDetailInfo.home.wins}</strong></p>
-                  <p>Draws: <strong>{teamDetailInfo.home.draws}</strong></p>
-                  <p>Losses: <strong>{teamDetailInfo.home.losses}</strong></p>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-4 col-sm-4">
+                  <h1 className="text-center team-name">{teamDetailInfo.teamName}</h1>
+                  {
+                    (teamDetailInfo.crestURI) ?
+                    <img className="team-emblem" src={teamDetailInfo.crestURI} alt="team-emblem"/> :
+                    <p>There is no emblem availible...</p>
+                  }
+                  
+                  <hr className="hr-small"/>
+                  <h3 className="statistic-header">Home statistic</h3>
+                  <div className="team-statistic">
+                    <p>Goals scored: <strong>{teamDetailInfo.home.goals}</strong></p>
+                    <p>Goals against: <strong>{teamDetailInfo.home.goalsAgainst}</strong></p>
+                    <p>Wins: <strong>{teamDetailInfo.home.wins}</strong></p>
+                    <p>Draws: <strong>{teamDetailInfo.home.draws}</strong></p>
+                    <p>Losses: <strong>{teamDetailInfo.home.losses}</strong></p>
+                  </div>
+                  <hr className="hr-small"/>
+                  <div className="team-statistic">
+                  <h3 className="statistic-header">Away statistic</h3>
+                    <p>Goals scored: <strong>{teamDetailInfo.away.goals}</strong></p>
+                    <p>Goals against: <strong>{teamDetailInfo.away.goalsAgainst}</strong></p>
+                    <p>Wins: <strong>{teamDetailInfo.away.wins}</strong></p>
+                    <p>Draws: <strong>{teamDetailInfo.away.draws}</strong></p>
+                    <p>Losses: <strong>{teamDetailInfo.away.losses}</strong></p>
+                  </div>
                 </div>
-                <hr className="hr-small"/>
-                <div className="team-statistic">
-                <h3 className="statistic-header">Away statistic</h3>
-                  <p>Goals scored: <strong>{teamDetailInfo.away.goals}</strong></p>
-                  <p>Goals against: <strong>{teamDetailInfo.away.goalsAgainst}</strong></p>
-                  <p>Wins: <strong>{teamDetailInfo.away.wins}</strong></p>
-                  <p>Draws: <strong>{teamDetailInfo.away.draws}</strong></p>
-                  <p>Losses: <strong>{teamDetailInfo.away.losses}</strong></p>
+                <div className="col-md-8 col-sm-8">
+                  {
+                    (team.players.length) ?
+                  <TeamTable team={team.players}/> :
+                  <h2>Sorry, there is no information about this team...</h2>
+                  }
                 </div>
-              </div>
-              <div className="col-md-7 col-sm-7">
-                {
-                  (team.players.length) ?
-                <TeamTable team={team.players}/> :
-                <h2>Sorry, there is no information about this team...</h2>
-                }
-              </div>
-              <div className="col-md-1 col-sm-1">
               </div>
             </div>
           </div> :
