@@ -16,9 +16,9 @@ export default class Home extends Component {
               <div className="container">
                 <div>
                   <ul className="navigation">
-                    <li><Link to="/">HOME</Link></li>
-                    <li><Link to="/fixtures">FIXTURES</Link></li>
-                    <li><Link to="competition">COMPETITION</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/'}>HOME</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/fixtures'}>FIXTURES</Link></li>
+                    <li><Link to={process.env.PUBLIC_URL + '/competition'}>COMPETITION</Link></li>
                   </ul>
                 </div>
               </div>

@@ -106,9 +106,9 @@ export default class Competition extends Component {
       <div className="text-center competitions-background">
         <nav>
           <ul className="navigation text-center">
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/fixtures">FIXTURES</Link></li>
-            <li><Link to="competition">COMPETITION</Link></li>
+            <li><Link to={process.env.PUBLIC_URL + '/'}>HOME</Link></li>
+            <li><Link to={process.env.PUBLIC_URL + '/fixtures'}>FIXTURES</Link></li>
+            <li><Link to={process.env.PUBLIC_URL + '/competition'}>COMPETITION</Link></li>
           </ul>
         </nav>
         {(loading) ? 

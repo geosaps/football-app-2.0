@@ -8,7 +8,7 @@ import App from './components/App';
 export default (
   <Route path={process.env.PUBLIC_URL + '/'} component={App}>
     <IndexRoute component={Home}></IndexRoute>
-    <Route path="/fixtures" component={Fixtires}></Route>
-    <Route path="/competition" component={Competition}></Route>
+    <Route path={process.env.PUBLIC_URL + '/fixtures'} component={Fixtires}></Route>
+    <Route path={process.env.PUBLIC_URL + '/competition'} component={Competition}></Route>
   </Route>
 )
