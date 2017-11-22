@@ -26,8 +26,8 @@ export default class Home extends Component {
             <div className="container">
               <h1 className="display-3">Football App 2.0</h1>
               <p className="lead">Latest fixtures, league tables, information about players in major worlds leagues</p>
-              <Link to="/competition"><button className="btn btn-success">Get competition</button></Link>
-              <Link to="/fixtures"><button className="btn btn-success">Get fixtures</button></Link>
+              <Link to={process.env.PUBLIC_URL + '/fixtures'}><button className="btn btn-success">Get competition</button></Link>
+              <Link to={process.env.PUBLIC_URL + '/competition'}><button className="btn btn-success">Get fixtures</button></Link>
             </div>
           </div>
         </div>
